@@ -1,0 +1,33 @@
+<aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+  <section class="skills-section py-3">
+    <h3 class="text-uppercase resume-section-heading mb-4">Skills</h3>
+    <div class="item">
+      <h4 class="item-title">Technical</h4>
+      <ul class="list-unstyled resume-skills-list">
+        {% for s in site.data.resume.technical_skills %}
+        <li class="mb-2">{{ s }}</li>
+        {% endfor %}
+      </ul>
+    </div><!--//item-->
+    <div class="item">
+      <h4 class="item-title">Professional</h4>
+      <ul class="list-unstyled resume-skills-list">
+        {% for s in site.data.resume.professional_skills %}
+        <li class="mb-2">{{ s }}</li>
+        {% endfor %}
+      </ul>
+    </div><!--//item-->
+  </section><!--//skills-section-->
+
+  <section class="education-section py-3">
+    <h3 class="text-uppercase resume-section-heading mb-4">Education</h3>
+    <ul class="list-unstyled resume-education-list">
+      {% for e in site.data.resume.education %}
+      <li class="mb-3">
+        <div class="resume-degree font-weight-bold">{{ e.degree }}</div>
+        <div class="resume-degree-org text-muted">{{ e.institution }} ({{e.year}})</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section><!--//education-section-->
+</aside><!--//resume-aside-->
