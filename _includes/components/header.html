@@ -1,0 +1,49 @@
+<header class="header text-center">
+  <div class="force-overflow">
+    <h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html">{{ site.data.me.name }}</a></h1>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" >
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navigation" class="collapse navbar-collapse flex-column" >
+        <div class="profile-section pt-3 pt-lg-0">
+          <img class="profile-image mb-3 rounded-circle mx-auto" src="/assets/images/profile.png" alt="a color portrait of a suave and handsome man" >
+
+          <ul class="social-list list-inline py-2 mx-auto">
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/derrekbertrand" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/derrekbertrand" target="_blank"><i class="fab fa-github-alt fa-fw"></i></a></li>
+            <li class="list-inline-item"><a href="https://stackoverflow.com/users/4086828/derrek-bertrand" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
+          </ul><!--//social-list-->
+          <hr>
+        </div><!--//profile-section-->
+
+        <ul class="navbar-nav flex-column text-start">
+          <li class="nav-item">
+            <a class="nav-link{% if page.name == 'index.html' %} active{% endif %}" href="/index.html"><i class="fas fa-user fa-fw me-2"></i>About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link{% if page.name == 'resume.html' %} active{% endif %}" href="/resume.html"><i class="fas fa-file-alt fa-fw me-2"></i>Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link{% if page.name == 'blog.html' %} active{% endif %}" href="/blog.html"><i class="fas fa-blog fa-fw me-2"></i>Blog</a>
+          </li>
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" href="contact.html"><i class="fas fa-envelope-open-text fa-fw me-2"></i>Contact</a>-->
+<!--          </li>-->
+        </ul>
+
+
+        <div class="dark-mode-toggle text-center w-100">
+          <hr class="mb-4">
+          <h4 class="toggle-name mb-3 "><i class="fas fa-adjust me-1"></i>Dark Mode</h4>
+          <input class="toggle" id="darkmode" type="checkbox">
+          <label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
+        </div><!--//dark-mode-toggle-->
+
+      </div>
+    </nav>
+  </div><!--//force-overflow-->
+</header>

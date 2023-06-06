@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<article class="blog-post px-3 py-5 p-md-5">
+  <div class="container single-col-max-width">
+    <header class="blog-post-header">
+      <h1 class="title mb-2">{{ page.title }}</h1>
+      <div class="meta mb-3"><span class="date">Published {{ page.date | date: "%d %b, %Y" }}</span>
+      </div>
+    </header>
+
+    <div class="blog-post-body">
+      <figure class="blog-banner">
+        <img class="img-fluid" src="/assets/images/blog/{{ page.date | date: '%Y-%m-%d'}}-card.jpg" alt="{{ page.banner_caption }}">
+        <figcaption class="mt-2 text-center image-caption">Image: {{ page.banner_caption }}</figcaption>
+      </figure>
+      {{ content }}
+    </div>
+
+  </div><!--//container-->
+</article>

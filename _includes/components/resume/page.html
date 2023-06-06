@@ -1,0 +1,21 @@
+{% include components/resume/header.html %}
+<hr>
+{% include components/resume/intro.html %}
+<hr>
+<div class="resume-body">
+  <div class="row">
+    <div class="resume-main col-12 col-lg-8 col-xl-9   pe-0   pe-lg-5">
+      <section class="work-section py-3">
+        <h3 class="text-uppercase resume-section-heading mb-4">Professional Experience</h3>
+        {% for p in site.positions %}
+        {% include components/resume/main-item.html title=p.title meta=p.meta content=p.output %}
+        {% endfor %}
+      </section><!--//work-section-->
+    </div><!--//resume-main-->
+
+    {% include components/resume/aside.html %}
+
+  </div><!--//row-->
+</div><!--//resume-body-->
+<hr>
+{% include components/resume/footer.html %}
