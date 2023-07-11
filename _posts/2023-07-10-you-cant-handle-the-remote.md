@@ -12,7 +12,7 @@ walking away, a lot more companies would [fail to pay rent] on their office buil
 a given, and continual work is required in order to maintain good report. For some, turning daily communication into a
 video call is the last nail in the coffin. "Remote makes it hard to be **collaborative**," they say.
 
-The information age fuels the idea economy. Sharing ideas is what makes the wold go round, especially if you work in a
+The information age fuels the idea economy. Sharing ideas is what makes the world go 'round, especially if you work in a
 creative or technical organization. Innovations are not easy to come by and require many individuals working closely
 with their stakeholders. For some, turning Friday afternoon whiteboard sessions into a video call is the last nail in
 the coffin. "Remote makes it hard to be **creative**," they say.
