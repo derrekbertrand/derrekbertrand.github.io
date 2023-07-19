@@ -8,3 +8,22 @@
 <!-- Dark Mode -->
 <script src="/assets/plugins/js-cookie.min.js"></script>
 <script src="/assets/js/dark-mode.js"></script>
+<script>
+  "use strict";
+  (() => {
+    const isExternal = (href) => {
+      return href.startsWith("{{ site.url }}") === false;
+    };
+    const isFullyQualified = (href) => {
+      return href.match(/^https?:\/\//) !== null;
+    };
+
+    document.querySelectorAll("a").forEach((el) => {
+      const href = el["href"];
+      if (href && isFullyQualified(href) && isExternal(href)) {
+        el["target"] = "_blank";
+        el["rel"] = "noopener noreferrer";
+      }
+    });
+  })();
+</script>
