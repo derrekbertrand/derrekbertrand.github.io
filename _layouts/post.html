@@ -11,10 +11,12 @@ layout: default
     </header>
 
     <div class="blog-post-body">
+      {% unless page.no_image %}
       <figure class="blog-banner">
         <img class="img-fluid" src="/assets/images/blog/{{ page.date | date: '%Y-%m-%d'}}-card.jpg" alt="{{ page.banner_caption }}">
         <figcaption class="mt-2 text-center image-caption">Image: {{ page.banner_caption }}</figcaption>
       </figure>
+      {% endunless %}
       {{ content }}
     </div>
 
