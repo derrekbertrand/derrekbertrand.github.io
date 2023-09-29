@@ -30,7 +30,12 @@ layout: default
 			{% for p in site.posts limit:3 %}
 			<div class="col-md-4 mb-5">
 				<div class="card blog-post-card">
-					<img class="card-img-top" src="/assets/images/blog/{{ p.date | date: '%Y-%m-%d'}}-card.jpg" alt="image">
+					{% if p.no_image %}
+					  {% assign blog_image = 'default' %}
+					{% else %}
+					  {% assign blog_image = p.date | date: '%Y-%m-%d' %}
+					{% endif %}
+					<img class="card-img-top" src="/assets/images/blog/{{ blog_image }}-card.jpg" alt="image">
 					<div class="card-body">
 						<h5 class="card-title"><a class="theme-link" href="{{ p.url }}">{{ p.title }}</a></h5>
 						<p class="card-text">{{ p.excerpt }}</p>
