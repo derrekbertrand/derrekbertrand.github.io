@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<article class="filterable px-3 py-5 p-md-5">
+  <div class="container single-col-max-width">
+    <h1 class="title mb-2">Resources</h1>
+    <p>Links to resources that I think are really informative and foundational to modern software engineering.</p>
+    <ul id="filters" class="filters">
+      <li class="type active" data-filter="*">All</li>
+      <li class="type" data-filter="eng">Engineering</li>
+      <li class="type" data-filter="cxo">CXO / Management</li>
+      <li class="type" data-filter="dev-ops">SRE / DevOps</li>
+    </ul>
+    <h2 class="mb-2">Blogs and Resource Sites</h2>
+    <ul>
+      <li class="filter-item dev-ops cxo eng"><a href="https://world.hey.com/dhh">DHH</a> - Creator of several successful startups and Ruby on Rails. I would describe him as "insightful and interesting" - take that as you will.</li>
+      <li class="filter-item cxo eng"><a href="https://www.joelonsoftware.com/">Joel Spolsky</a> - Founder of the companies behind Trello and Stack Overflow. Has an organized and insanely extensive blog with over 1000 articles.</li>
+      <li class="filter-item dev-ops eng"><a href="https://www.roylindauer.com/">Roy Lindauer</a> - Savvy DevOps, Platform and Automation Engineer. Has a blog full of useful nuggets of knowledge.</li>
+    </ul>
+    <h2 class="mb-2">YouTube</h2>
+    <ul>
+      {% assign youtube_videos = site.data.youtube | sort: "title" %}
+      {% for i in youtube_videos %}
+      <li class="filter-item {{ i.tags | join: ' ' }}">
+        <a href="{{ i.url }}">{{ i.title }}</a>{% if i.author %} - <strong>{{ i.author }}</strong>{% endif %}:
+        {{ i.description }}</li>
+      {% endfor %}
+    </ul>
+
+  </div>
+</article>
+
+<script>
+  'use strict';
+  document.addEventListener("DOMContentLoaded", function(e) {
+    document.querySelectorAll('.filters .type').forEach((filter) => {
+      filter.addEventListener('click', (e) => {
+        let filterValue = filter.getAttribute('data-filter')
+
+        document.querySelectorAll('.filterable .filter-item').forEach((item) => {
+          if (filterValue === '*' || item.classList.contains(filterValue)) {
+            item.classList.remove('d-none')
+          } else {
+            item.classList.add('d-none')
+          }
+        })
+
+        for (let siblingFilterItem of filter.parentNode.children) {
+          siblingFilterItem.classList.remove('active')
+        }
+
+        filter.classList.add('active')
+      })
+    })
+  })
+</script>
