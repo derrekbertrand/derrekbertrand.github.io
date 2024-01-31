@@ -1,0 +1,47 @@
+- title: Prioritizing Technical Debt
+  author: Adam Tornhill
+  tags: [cxo eng]
+  url: https://youtu.be/w9YhmMPLQ4U
+  description: How to measure technical debt and prioritize it as a business need.
+
+- title: War is Peace, Freedom is Slavery, Ignorance is Strength, Scrum is Agile
+  author: Allen Holub
+  tags: [cxo eng]
+  url: https://youtu.be/F42A3R28WMU
+  description: "'Agile' has become meaningless."
+
+- title: The Unreasonable Effectiveness of Simplicity
+  author: Randy Shoup
+  tags: [cxo dev-ops eng]
+  url: https://youtu.be/oejXFgvAwTA
+  description: How to keep your architecture simple and decoupled while scaling - with anecdotes from eBay and Amazon.
+
+- title: Minimum Viable Architecture
+  author: Randy Shoup
+  tags: [cxo dev-ops eng]
+  url: https://youtu.be/9Q7GANXn02k
+  description: How and when to decompose your architecture while scaling - with anecdotes from eBay and Amazon.
+
+- title: "Attitude Determines Altitude: Engineering Yourself & Your Teams"
+  author: Randy Shoup
+  tags: [cxo eng]
+  url: https://youtu.be/y1SpwCiRoPY
+  description: Management philosophy and how to lift up your engineering teams instead of choking the life out of them.
+
+- title: Code as Risk
+  author: Kevlin Henney
+  tags: [cxo eng]
+  url: https://youtu.be/YyhfK-aBo-Y
+  description: A discussion of code as a cost center, followed by a discussion of C# code in the real world.
+
+- title: "Gilding the Rose: Refactoring-Driven Development"
+  author: Kevlin Henney
+  tags: [eng]
+  url: https://youtu.be/kTcDBYCpj7Q
+  description: A discussion of refactoring and TDD by example using a complex existing codebase. A must-watch for engineers unfamiliar with TDD and/or refactoring.
+
+- title: Feature Branches and Toggles in a Post-GitHub World
+  author: Sam Newman
+  tags: [eng dev-ops]
+  url: https://youtu.be/lqRQYEHAtpk
+  description: A discussion of a real world trainwreck and how to manage the complexity of CI on "enterprise" applications using feature toggles and dark launches.
