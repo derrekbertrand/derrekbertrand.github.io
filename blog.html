@@ -12,7 +12,7 @@ layout: default
 			<div class="row g-3 g-xl-0">
 				<div class="col-2 col-xl-3">
 					{% unless p.no_image %}
-					<img class="img-fluid post-thumb" src="/assets/images/blog/{{ p.date | date: '%Y-%m-%d'}}-thumb.jpg" alt="image">
+					<img class="img-fluid post-thumb" src="/assets/images/blog/{{ p.date | date: '%Y-%m-%d'}}-thumb.jpg" alt="{{ p.banner_caption }}">
 					{% endunless %}
 				</div>
 				<div class="col">
