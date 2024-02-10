@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Wrangling Legacy Data: Denormalize and Purge'
-banner_caption: Test caption
 no_image: true
 ---
 

@@ -45,3 +45,27 @@
   tags: [eng dev-ops]
   url: https://youtu.be/lqRQYEHAtpk
   description: A discussion of a real world trainwreck and how to manage the complexity of CI on "enterprise" applications using feature toggles and dark launches.
+
+- title: How to Truly Build a Team
+  author: Cindy Xin
+  tags: [cxo]
+  url: https://youtu.be/Nsi9qlYY9Fc
+  description: A real world example of what "shift left" looks like for "QA" teams.
+
+- title: "#NoEstimates"
+  author: Allen Holub
+  tags: [cxo]
+  url: https://youtu.be/QVBlnCTu9Ms
+  description: Estimation is a bad thing. Explains how to plan without estimations and get back to delivering value.
+
+- title: "You Keep Using That Word: Asynchronous And Interprocess Comms"
+  author: Sam Newman
+  tags: [dev-ops eng]
+  url: https://youtu.be/6FOCNf06lqY
+  description: Getting into the weeds of "async" communication between services and the confused terminology thereof.
+
+- title: What Your Mother Never Told You About Agile Development
+  author: Aino Corry
+  tags: [cxo]
+  url: https://youtu.be/ZFKqlfJiGEQ
+  description: Applying Agile practices in real companies; Aino has a very dry sense of humor and great anecdotes.

@@ -13,6 +13,12 @@ url: "https://www.derrekbertrand.com"
 
 # Build settings
 
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
