@@ -1,6 +1,6 @@
 # derrekbertrand.github.io
 
-# Development
+## Development
 
 ```shell
 bundle install
