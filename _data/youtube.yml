@@ -69,3 +69,15 @@
   tags: [cxo]
   url: https://youtu.be/ZFKqlfJiGEQ
   description: Applying Agile practices in real companies; Aino has a very dry sense of humor and great anecdotes.
+
+- title: Object-Oriented Programming is Bad
+  author: Brian Will
+  tags: [eng]
+  url: https://youtu.be/QM1iUe6IofM
+  description: I initially gave this a thumbs down when it came out and dismissed it as nonsense. 8 years later, this is basically how I arrange code.
+
+- title: "Moving IO to the edges of your app: Functional Core, Imperative Shell"
+  author: Scott Wlaschin
+  tags: [eng]
+  url: https://youtu.be/P1vES9AgfC4
+  description: A high level discussion of purity and functional design in your Object Oriented language. Requires a solid understanding of Design and Architecture.
